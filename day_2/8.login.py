@@ -5,9 +5,7 @@ id = input('id ?')
 # if id != 'egoing':
 #     print('WHO ARE YOU!!?')
 
-if id == 'egoing':
-    print('Welcome')
-elif id == 'leezche':
+if id == 'egoing' or id == 'leezche':
     print('Welcome')
 else :
     print('WHO ARE YOU!!?')
