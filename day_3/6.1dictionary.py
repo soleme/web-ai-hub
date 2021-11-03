@@ -7,4 +7,5 @@ for i in range(2):
     pw = input('비밀번호 입력 : ')
     members[id] = pw
 
-print(members)
+for key in members:
+    print(key + " : " + members[key])    
