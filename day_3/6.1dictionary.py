@@ -1,11 +1,21 @@
-# 회원 가입 프로그램 (딕셔너리)
-
 members = {}
+flag = True
 
-for i in range(2):
-    id = input('아이디 입력 : ')
-    pw = input('비밀번호 입력 : ')
-    members[id] = pw
-
-for key in members:
-    print(key + " : " + members[key])    
+while flag:
+    selectNum = int(input('\n1. 회원가입, 2. 프로그램 종료\t'))
+    
+    if selectNum == 1:
+        id = input('아이디를 입력하세요.\t')
+        pw = input('비밀번호를 입력하세요.\t')
+        members[id] = pw
+        
+    elif selectNum == 2:
+        print('-' * 30)
+        print('아이디 : 비밀번호')
+        print('-' * 30)
+        
+        for key in members.keys():
+            print(key, '\t:\t', members[key])
+        print('-' * 30)
+        
+        flag = False
